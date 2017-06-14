@@ -14,6 +14,7 @@
         <thead>
             <tr>
                 <th>Rating</th>
+                <th>User</th>
                 <th>Review</th>
                 <th></th>
             </tr>
@@ -27,6 +28,7 @@
                             <span class="fa fa-star"></span>
                         <% } %>
                     </td>
+					<td><%= results[x].user %></td>
                     <td><%= results[x].review %></td>
                     <td>
                         <% if(user!==undefined) { %>
