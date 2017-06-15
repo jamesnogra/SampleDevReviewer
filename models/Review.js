@@ -10,6 +10,7 @@ var reviewSchema = new Schema({
     rating: Number,
     review: String,
 	user: String,
+    email: String,
     date: Date
 });
 

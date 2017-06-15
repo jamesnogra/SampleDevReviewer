@@ -23,6 +23,7 @@ module.exports.postAddReview = function(req, res) {
     var review = req.body;
     review.date = Date.now();
 	review.user = req.user.google.name;
+    review.email = req.user.google.email;
     var newReview = Review(review);
     newReview.save(function(error) {
         if (error) throw error;
